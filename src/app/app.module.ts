@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {FormsModule} from'@angular/forms'
+import {FormsModule} from'@angular/forms' ;
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SinglePostComponent } from './single-post/single-post.component';
 import { PostViewComponent } from './post-view/post-view.component';
 
-import {postService} from './Services/Post-service'
+import {PostService} from './Services/post-service'
 import {usersService} from './Services/users-service'
 import { Routes, RouterModule } from '@angular/router';
 import { PostCommentComponent } from './post-comment/post-comment.component';
@@ -36,10 +37,11 @@ const appRoutes: Routes = [
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
-    postService,
+    PostService,
     usersService,
     commentService
   ],

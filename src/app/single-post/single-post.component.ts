@@ -9,22 +9,13 @@ import { usersService } from '../Services/users-service';
 export class SinglePostComponent implements OnInit {
 
 @Input()
-  idpost !: number;
-@Input()
-  titlepost !: string;
-@Input()
-  pathimg !: string;
-@Input()
-  user_id !: number;
+  post : any ;
 
-  name !: string;
-  path !: string;
   constructor(private userservice : usersService) { 
   }
 
   ngOnInit(): void {
-    this.name = this.userservice.GetUserById(+this.user_id)!.name;
-    this.path = this.userservice.GetUserById(+this.user_id)!.imgpath;
+    
   }
 
 }

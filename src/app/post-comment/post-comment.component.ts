@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { postService } from '../Services/Post-service';
+import { PostService } from '../Services/post-service';
 import { ActivatedRoute } from '@angular/router';
 import { commentService } from '../Services/comment-service';
 
@@ -20,7 +20,7 @@ export class PostCommentComponent implements OnInit {
       this.textinput ="";
   }
 
-  constructor(private postservice : postService, private route : ActivatedRoute, private commentservice : commentService) { 
+  constructor(private postservice : PostService, private route : ActivatedRoute, private commentservice : commentService) { 
   }
 
   ngOnInit(): void {

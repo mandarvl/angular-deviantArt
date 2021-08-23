@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { postService } from '../Services/Post-service';
+import { PostService } from '../Services/post-service';
 
 @Component({
   selector: 'app-post-view',
@@ -10,10 +10,12 @@ export class PostViewComponent implements OnInit {
 
   posts !: any[];
 
-  constructor(private postservice : postService) { }
+  constructor(private postService : PostService) { }
 
   ngOnInit(): void {
-    this.posts = this.postservice.posts;
+    this.postService.LoadPosts().subscribe((data:any) => {
+      this.posts = data ;
+    }) ;
   }
 
 }
