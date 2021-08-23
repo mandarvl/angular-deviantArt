@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PostService } from '../Services/post-service';
 import { ActivatedRoute } from '@angular/router';
-import { commentService } from '../Services/comment-service';
+import { CommentService } from '../Services/comment-service';
 
 @Component({
   selector: 'app-post-comment',
@@ -9,26 +9,30 @@ import { commentService } from '../Services/comment-service';
   styleUrls: ['./post-comment.component.css']
 })
 export class PostCommentComponent implements OnInit {
-  pathimg !: string;
-  iduser !: number;
-  comments !: any[];
-  textinput !: string;
-
+  currentPost !: any ;
+  textinput !: any ;
+  comments !: any ;
+  postLoaded !: Promise<boolean> ;
   addcomment(){
-    if(this.textinput != '')
-      this.comments.unshift({id:1,id_user:1,id_post:this.iduser,commentary:this.textinput});
-      this.textinput ="";
+    if(this.textinput === "")
+      return;
+    this.textinput ="";
   }
 
-  constructor(private postservice : PostService, private route : ActivatedRoute, private commentservice : commentService) { 
+  constructor(private postService : PostService, private route : ActivatedRoute, private commentService : CommentService) { 
+    this.currentPost = {} ;
   }
 
   ngOnInit(): void {
     const id = this.route.snapshot.params['id'];
-    this.pathimg = this.postservice.GetPostById(+id)!.imgpath;
-    this.iduser = this.postservice.GetPostById(+id)!.id_user;
+    this.postService.GetPostById(id).subscribe((data:any) => {
+      this.currentPost = data ;
+      this.postLoaded = Promise.resolve(true);
+    }) ;
 
-    this.comments = this.commentservice.GetCommentByIdPost(+id);
+    this.commentService.GetCommentByIdPost(id).subscribe((data:any) => {
+      this.comments = data ;
+    }) ;
   }
   
 }

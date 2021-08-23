@@ -13,7 +13,7 @@ import {usersService} from './Services/users-service'
 import { Routes, RouterModule } from '@angular/router';
 import { PostCommentComponent } from './post-comment/post-comment.component';
 import { SingleCommentComponent } from './single-comment/single-comment.component';
-import {commentService} from'./Services/comment-service';
+import {CommentService} from'./Services/comment-service';
 
 
 const appRoutes: Routes = [
@@ -43,7 +43,7 @@ const appRoutes: Routes = [
   providers: [
     PostService,
     usersService,
-    commentService
+    CommentService
   ],
   bootstrap: [AppComponent]
 })

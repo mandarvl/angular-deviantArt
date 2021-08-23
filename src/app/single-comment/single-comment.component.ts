@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { usersService } from '../Services/users-service';
-import { commentService } from '../Services/comment-service';
 
 @Component({
   selector: 'app-single-comment',
@@ -10,20 +9,18 @@ import { commentService } from '../Services/comment-service';
 export class SingleCommentComponent implements OnInit {
 
     @Input()
-      iduser !: number;
-    @Input() 
-      idpost !: number;
-    @Input()
-      comment!: string;
-      
-    path !: string;
-    name !: string;
-
-  constructor(private userservice : usersService) { }
+    comment!: any;
+  @Input()
+  date !: Date;
+  constructor(private userservice : usersService) { 
+    
+  }
 
   ngOnInit(): void {
-    this.path = this.userservice.GetUserById(+this.iduser)!.imgpath;
-    this.name = this.userservice.GetUserById(+this.iduser)!.name;
+    var t = "2010-06-09 13:12:01".split(/[- :]/);
+
+    // Apply each element to the Date function
+    this.date = new Date(Date.UTC(Number(t[0]), Number(t[1])-1, Number(t[2]), Number(t[3]), Number(t[4]), Number(t[5])));
   }
 
 }
