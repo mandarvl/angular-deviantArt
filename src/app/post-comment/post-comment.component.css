@@ -31,19 +31,27 @@ h2{
     background-color: #06070D;
     padding-bottom: 20px;
 }
+
 .contenaire {
     display: flex;
 }
+
+#comment .contenaire{
+    align-items: stretch;
+    position: relative;
+}
+
 .content-left{
     width: 70%;
 }
 .content-right{
-    width: 30%;
     position: fixed;
-    top: 50;
+    width: 30% ;
+    top: 60px;
+    bottom: 54px;
     right: 0;
-    bottom: 0;
-    top: 50px;
+    overflow-y: auto;
+    z-index: 1 ;
 }
 .comments{
     width: 70%;

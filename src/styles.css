@@ -4,3 +4,6 @@ html, body{
     padding: 0 ;
 }
 
+html{
+    background-color: rgb(53, 53, 53);
+}
