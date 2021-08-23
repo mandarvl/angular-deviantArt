@@ -1,0 +1,100 @@
+.img_post img{
+    flex-shrink: 0;
+    height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+h2{
+    margin: 0;
+    color: #fff;
+}
+.img_post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+    box-shadow: 0px 0px 15px 5px #000;
+    
+}
+.bg-black{
+    background-color: #101319;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+.bg-black-2f{
+    background-color: #06070D;
+    padding-bottom: 20px;
+}
+.contenaire {
+    display: flex;
+}
+.content-left{
+    width: 70%;
+}
+.content-right{
+    width: 30%;
+    position: fixed;
+    top: 50;
+    right: 0;
+    bottom: 0;
+    top: 50px;
+}
+.comments{
+    width: 70%;
+    margin: 0 auto;
+}
+.comments h2{
+    padding: 40px 0px 40px 40px;
+}
+.comments ul{
+    list-style: none;
+    margin: 0;
+}
+.comments li{
+    margin-bottom: 20px;
+}
+.content-right{
+    background-color: #0F1117;
+}
+.guard h2{
+    padding:40px 0px;
+}
+.guard{
+    padding: 20px 10px 20px 40px ;
+}
+.guard textarea{
+    resize: none;
+    width: 90%;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: 'Candara';
+    display: block;
+    background-color: #0F1117;
+    border: none;
+    border-bottom:2px solid #999;
+    font-weight: 600;
+    color: #999;
+}
+.input{
+    width: 200px;
+    background-color: #000;
+    color: #999;
+    border: none;
+    margin-top: 20px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    background-image: url(../../assets/img/send.png);
+    background-position: 90% 50%;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}

@@ -1,0 +1,29 @@
+.content-title h2{
+    margin: 0;
+    color: #fff;
+}
+.content{
+    background-color: #06070D;
+}
+.content-title{
+    background-color: #15191EF2;
+    padding: 20px 0px 20px 40px;
+    position: fixed;
+    right: 0;
+    z-index: 100;
+    left: 71px;
+}
+.list-group{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.single-post-view{
+    padding-top:90px ;
+}
+.list-group li{
+    margin: 10px;
+}

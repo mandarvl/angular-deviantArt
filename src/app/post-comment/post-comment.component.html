@@ -1,0 +1,34 @@
+<div class="content">
+    <div class="contenaire">
+            <div class="content-left">
+                <div class="bg-black">
+                    <div class="img_post">
+                        <img src="{{ pathimg }}" alt="">
+                    </div>
+                </div><!--bg-black-->
+                <div class="bg-black-2f">
+                    <div class="comments">
+                        <h2>Comments</h2>
+                        <ul>
+                            <ng-container *ngFor='let com of comments'>
+                                <li><app-single-comment 
+                                                        [iduser]="com.id_user"
+                                                        [idpost]="com.id_post"
+                                                        [comment]="com.commentary">
+                                    </app-single-comment></li>
+                            </ng-container>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--content-left-->
+            <div class="content-right">
+                <div class="guard">
+                    <h2>Commentary</h2>
+                    <textarea [(ngModel)]="textinput" placeholder="add your comment here" ></textarea>
+                    <button class="input" (click)="addcomment()">Send</button>  
+                </div>
+            </div>
+    </div>
+    
+    
+</div>
