@@ -1,0 +1,135 @@
+.login-container{
+    width: 856px;
+    height: 690px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    box-sizing:border-box ;
+}
+.left{
+    position: relative;
+    width: 416px;
+    height: 100%;
+    background-image: url(../../assets/img/photo8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.container-left{
+    padding: 144px 56px 40px 56px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container-left > div h1{
+    width: 221px;
+    font-size: 44px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.container-left > div p{
+    font-size: 14px;
+    letter-spacing: .3px;
+    margin-right: 40px;
+}
+.right{
+    width: 440px;
+    height: 100%;
+    position: relative;
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.close button{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 25px;
+}
+
+.right-content{
+    position: relative;
+    padding: 44px 46px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+}
+.right-content > div h2{
+    font-size: 25px;
+    line-height: 32px;
+    margin: 0 0 3px;
+}
+
+.right-content > div p{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: .3px;
+}
+
+.right-content > form{
+    margin: 40px 0 53px;
+}
+
+.right-content > form .join button{
+    border: none;
+    margin-top: 24px;
+    background-color: rgb(0, 252, 126);
+    padding: 15px 25px;
+    min-width: 25px;
+    font-weight: bold;
+}
+
+.right-content > form .join button:hover{
+    opacity: .6;
+    cursor: pointer;
+}
+
+.join{
+    margin: 12px 0 10px;
+}
+
+.right-content > div:nth-of-type(2){
+    width: 310px;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: .3px;
+    color: grey;
+}
+.right-content > form .join a{
+    display: block;
+    margin-top: 64px;
+    font-size: 16px;
+}
+.right-content > div:nth-of-type(2) a, .right-content > div a{
+    text-decoration: none;
+    color: rgb(33, 152, 168);
+}
+
+.input-div{
+    margin-bottom: 15px;
+}
+
+.input-div label{
+    font-size: 12px;
+    font-weight: bold;
+}
+.input-div input{
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    cursor: text;
+}
+.checkbox-div label{
+    font-size: 14px;
+    margin-left: 8px;
+}
