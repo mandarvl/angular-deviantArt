@@ -14,9 +14,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { PostCommentComponent } from './post-comment/post-comment.component';
 import { SingleCommentComponent } from './single-comment/single-comment.component';
 import {CommentService} from'./Services/comment-service';
+import { LoginComponent } from './login/login.component';
 
 
 const appRoutes: Routes = [
+  { path: 'login', component: LoginComponent},
   { path: 'comment', component: PostCommentComponent },
   { path: 'post/:id', component: PostCommentComponent },
   { path: '', component:  PostViewComponent}
