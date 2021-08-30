@@ -1,0 +1,60 @@
+ul{
+    list-style: none;
+    margin: 0;
+}
+ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.option{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.option-left ul{
+    display: flex;
+}
+.option-left ul li {
+    padding: 10px 0px 10px 30px;
+    margin-right: 20px;
+    background-position:0px 50% ;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+.option-left ul li:nth-child(1){
+    background-image: url(../../assets/img/fav.png);
+}
+.option-left ul li:nth-child(2){
+    background-image: url(../../assets/img/comment.png);
+}
+.option-left ul li:nth-child(1):hover{
+    background-image: url(../../assets/img/favH.png);
+}
+.option-left ul li:nth-child(2):hover{
+    background-image: url(../../assets/img/commentH.png);
+}
+.option-left ul li a:hover{
+    color : #01E59B;
+}
+.option-right ul {
+    display: flex;
+}
+.option-right ul li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-position:50% 50% ;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    margin: 0px 10px;
+}
+.option-right ul li:nth-child(1) a{
+    background-image: url(../../assets/img/group.png);
+}
+.option-right ul li:nth-child(2) a{
+    background-image: url(../../assets/img/badge.png);
+}
+.option-right ul li:nth-child(3) a{
+    background-image: url(../../assets/img/more.png);
+}

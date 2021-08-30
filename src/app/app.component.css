@@ -140,7 +140,6 @@ img {
     top: 60px;
     bottom: 0;
     border-right: 1px solid #fff3;
-    z-index: 3;
 }
 .menu-left ul{
     display: flex;
@@ -186,13 +185,8 @@ img {
     left: 0;
     right: 0;
     background-color: #06070DC7;
-    height: 54px;
-    display: flex;
-    align-items: center ;
-    justify-content: center ;
-    z-index: 999;
 }
 .footer p{
     color: #525252;
-    margin: 0;
+    text-align: center;
 }

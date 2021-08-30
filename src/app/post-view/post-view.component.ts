@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { PostService } from '../Services/post-service';
+import { postService } from '../Services/Post-service';
+import axios from 'axios';
 
 @Component({
   selector: 'app-post-view',
@@ -10,12 +11,14 @@ export class PostViewComponent implements OnInit {
 
   posts !: any[];
 
-  constructor(private postService : PostService) { }
+  constructor(private postservice : postService) { }
 
   ngOnInit(): void {
-    this.postService.LoadPosts().subscribe((data:any) => {
-      this.posts = data ;
-    }) ;
+    this.posts = this.postservice.posts;
+    axios.get('http://10.42.0.1:4300/posts').then((res)=>{
+      this.posts = res.data;
+      console.log(res.data);
+    });
   }
 
 }

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'DeviantArt | The largest online Art Gallery and Community'  ;
+  title = 'angular-deviantArt';
 }

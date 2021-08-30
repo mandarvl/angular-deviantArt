@@ -1,0 +1,36 @@
+.linkGallery{
+    margin: 30px 0px;
+}
+.linkGallery a{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+}
+.linkGallery a:hover{
+    color:#01E59B ;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gallery a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 100px;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+img{
+    flex-shrink: 0;
+    height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,38 @@
+.profil{
+    display: flex;
+    padding: 20px 0px 0px 40px;
+}
+.profil .info-profil h2, .profil .info-profil p{
+    margin: 0;
+}
+img {
+    flex-shrink: 0;
+    height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+.profil .img-profil a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.profil .info-profil{
+    margin-left: 20px;
+}
+.profil .title  h2{
+    color: #fff;
+}
+.profil .byuser p{
+    color: #5E5E5E;
+}
+.profil .byuser p span{
+    color: #fff;
+    text-decoration: underline;
+}

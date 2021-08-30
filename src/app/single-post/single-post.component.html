@@ -1,12 +1,12 @@
 <div class="post">
-<img src="http://localhost:4300/{{ post.lienImage}}" alt="">
+<img src="{{ pathimg}}" alt="">
     <div class="info-post">
         <div class="profil">
             <div class="pdp">
-            <img src="http://localhost:4300/{{ post.lienAvatar }}" alt="">
+            <img src="{{ pdp }}" alt="">
             </div>
-        <p>{{ post.nomUtilisateur }}</p>
-            <span>---- {{ post.titre }} ----</span>
+        <p>{{ NomMembre }}</p>
+            <span>---- {{titlepost}} ----</span>
         </div>
         <div class="contener-comments">
             <ul>

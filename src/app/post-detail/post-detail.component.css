@@ -1,0 +1,58 @@
+.profil-detail{
+    margin-top:40px ;
+}
+.interaction ul {
+    display: flex;
+}
+ul {
+    margin: 0;
+    list-style: none;
+}
+.interaction {
+    margin-bottom: 40px;
+}
+.interaction ul li{
+    color: #9F9F9F;
+    background-position: 0px 50%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    margin-right: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.interaction ul li:nth-child(1){
+    background-image: url(../../assets/img/starPlein.png);
+}
+.interaction ul li:nth-child(2){
+    background-image: url(../../assets/img/commentPlein.png);
+}
+.interaction ul li:nth-child(3){
+    background-image: url(../../assets/img/eyes.png);
+}
+.cube ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cube ul li a{
+    padding: 15px;
+    background-color: #1E242A;
+    margin: 0px 5px;
+}
+.cube ul li a{
+    font-size:13px ;
+}
+.cube ul li a:hover{
+    background-color: #343E47;
+}
+.description{
+    padding-left: 40px;
+    margin-top:40px ;
+}
+.description p{
+    font-size: 16px ;
+    font-weight: 600;
+    color: #9F9F9F;
+}

@@ -9,12 +9,25 @@ import { usersService } from '../Services/users-service';
 export class SinglePostComponent implements OnInit {
 
 @Input()
-  post : any ;
-
+  idpost !: number;
+@Input()
+  titlepost !: string;
+@Input()
+  pathimg !: string;
+@Input()
+  user_id !: number;
+@Input()
+NomMembre !: string;
+@Input()
+pdp !: string;
+  
+  name !: string;
+  path !: string;
   constructor(private userservice : usersService) { 
   }
 
   ngOnInit(): void {
+    console.warn(this.titlepost);
     
   }
 

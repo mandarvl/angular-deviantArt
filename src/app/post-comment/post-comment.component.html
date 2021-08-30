@@ -1,31 +1,52 @@
-<div class="content" id="comment">
-    <ng-container *ngIf="postLoaded | async">
-        <div class="contenaire">
-                <div class="content-left">
-                    <div class="bg-black">
-                        <div class="img_post">
-                            <img src="http://localhost:4300/{{ currentPost.lienImage }}" alt="">
-                        </div>
-                    </div><!--bg-black-->
-                    <div class="bg-black-2f">
-                        <div class="comments">
-                            <h2>Comments</h2>
-                            <ul>
-                                <ng-container *ngFor='let com of comments'>
-                                    <li><app-single-comment [comment]="com">
-                                        </app-single-comment></li>
-                                </ng-container>
-                            </ul>
-                        </div>
+<div class="content">
+    <div class="contenaire">
+            <div class="content-left">
+                <div class="bg-black">
+                    <div class="img_post">
+                        <img src="{{ pathimg }}" alt="">
                     </div>
-                </div><!--content-left-->
-                <div class="content-right">
-                    <div class="guard">
-                        <h2>Commentary</h2>
-                        <textarea [(ngModel)]="textinput" placeholder="add your comment here" ></textarea>
-                        <button class="input" (click)="addcomment()">Send</button>  
+                </div><!--bg-black-->
+                <div class="bg-black-2f">
+                    <div class="comments">
+                        <app-option></app-option>
+                            <app-profil 
+                                    [userName]="profil.nomMembre"
+                                    [posteTitre]="profil.titre"
+                                    [pdp]="profil.saryMembre"             
+                            >
+                            </app-profil>
+                        
+                        <app-post-detail
+                                    [vues]="profil.nbrVues"
+                                    [nbrComments] ="this.nbrComments"
+                        >
+                        </app-post-detail>
+                    <h2>Comments</h2>
+                        <ul>
+                            <ng-container *ngFor='let com of comments'>
+                                <li><app-single-comment 
+                                                        [iduser]="com.idMembre"
+                                                        [idpost]="com.idPublication"
+                                                        [contenu]="com.contenu"
+                                                        [nomMembre]="com.nomMembre"
+                                                        [saryMembre]="com.saryMembre"
+                                                        >
+                                    </app-single-comment></li>
+                            </ng-container>
+                        </ul>
                     </div>
                 </div>
-        </div>
-    </ng-container>
+            </div><!--content-left-->
+            <div class="content-right">
+                <div class="guard">
+                    <app-see-more></app-see-more>
+
+                    <h2>Commentary</h2>
+                    <textarea [(ngModel)]="textinput" placeholder="add your comment here" ></textarea>
+                    <button class="input" (click)="addcomment()">Send</button>  
+                </div>
+            </div>
+    </div>
+    
+    
 </div>

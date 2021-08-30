@@ -6,7 +6,13 @@
         <ul class="list-group">
             <ng-container *ngFor="let post of posts">
             <li><a routerLink="post/{{ post.idPublication }}"><app-single-post 
-                                [post]="post">
+                                [titlepost] = "post.titre"
+                                [pathimg] = "post.saryPublication"
+                                [id] = "post.idPublication" 
+                                [user_id]="post.idMembre"
+                                [NomMembre]="post.nomMembre"
+                                [pdp]="post.saryMembre">
+                                
                     </app-single-post></a></li>
             </ng-container>
         </ul>
