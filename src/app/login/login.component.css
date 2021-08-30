@@ -1,13 +1,23 @@
-.login-container{
-    width: 856px;
-    height: 690px;
+.image-bg{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100% ;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: #000 url(https://st.deviantart.net/signinup/sisu_bg-min.png) ;
+    background-size: cover;
+}
+
+.login-container{
+    width: 856px;
+    height: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
     box-sizing:border-box ;
 }
@@ -21,20 +31,22 @@
     color: #fff;
 }
 .container-left{
-    padding: 144px 56px 40px 56px;
+    padding: 40px 56px 40px 56px;
     display: flex;
+    height: 100% ;
     justify-content: center;
     flex-direction: column;
 }
-.container-left > div h1{
+.container-left > h1{
     width: 221px;
-    font-size: 44px;
-    font-weight: 400;
+    font-size: 35px;
+    font-weight: 800;
     text-transform: uppercase;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 }
-.container-left > div p{
+.container-left > p{
     margin-right: 40px;
+    line-height: 23px ;
 }
 .right{
     width: 440px;

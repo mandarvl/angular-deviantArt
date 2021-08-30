@@ -140,6 +140,7 @@ img {
     top: 60px;
     bottom: 0;
     border-right: 1px solid #fff3;
+    z-index: 50;
 }
 .menu-left ul{
     display: flex;
@@ -178,6 +179,7 @@ img {
 
 .post{
     padding: 60px 0px 0px 70px;
+    z-index: 5;
 }
 .footer{
     position: fixed;

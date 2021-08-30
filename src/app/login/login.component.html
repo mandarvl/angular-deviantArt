@@ -1,39 +1,39 @@
-<div class="login-container">
-    <div class="left">
-        <div class="container-left">
-            <div>
-                <h1>join the largest art communit in the world</h1>
-                <p>Explore and discover art, become a better artist, connect with others over mutual hobbies, or buy and sell work-you can do it all here.</p>
+<div class="image-bg">
+    <div class="login-container">
+        <div class="left">
+            <div class="container-left">
+                    <h1>join the largest art community in the world</h1>
+                    <p>Explore and discover art, become a better artist, connect with others over mutual hobbies, or buy and sell work-you can do it all here.</p>
             </div>
         </div>
-    </div>
-    <div class="right">
-       <div class="right-content">      
-            <div>
-                <h2>Log in</h2>
-                <p>Become a deviant. <a href="">Join</a></p>
-            </div>
-            <form>    
-                <div class="input-div">
-                    <label for="username">Username</label>
-                    <input type="text" id="username">
+        <div class="right">
+        <div class="right-content">      
+                <div>
+                    <h2>Log in</h2>
+                    <p>Become a deviant. <a href="">Join</a></p>
                 </div>
-                <div class="input-div">
-                    <label for="password">Password</label>
-                    <input type="password" id="password">
+                <form (ngSubmit)="onSubmit(f)" #f="ngForm">    
+                    <div class="input-div">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username">
+                    </div>
+                    <div class="input-div">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="checkbox-div">
+                        <input type="checkbox" id="rememberme">
+                        <label for="rememberme">Keep me logged in</label>
+                    </div>
+                    <div class="join">
+                        <button>Join</button><br>
+                        <a href="">Forgot your username or password?</a>
+                    </div>
+                </form>
+                <div>
+                    By clicking Log in, I confirm that I habe read and agree to the DeviantArt <a href="">Terms of service</a>, <a href="">Privacy Policy</a>, and to receive emails and updates.
                 </div>
-                <div class="checkbox-div">
-                    <input type="checkbox" id="rememberme">
-                    <label for="rememberme">Keep me logged in</label>
-                </div>
-                <div class="join">
-                    <button>Join</button><br>
-                    <a href="">Forgot your username or password?</a>
-                </div>
-            </form>
-            <div>
-                By clicking Log in, I confirm that I habe read and agree to the DeviantArt <a href="">Terms of service</a>, <a href="">Privacy Policy</a>, and to receive emails and updates.
-            </div>
-       </div>
+        </div>
+        </div>
     </div>
 </div>
