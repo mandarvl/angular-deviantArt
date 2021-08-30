@@ -32,11 +32,11 @@ export class PostCommentComponent implements OnInit {
     this.pathimg = this.postservice.GetPostById(+id)!.imgpath;
     this.iduser = this.postservice.GetPostById(+id)!.id_user;
 
-    axios.get("http://10.42.0.1:4300/post?id="+this.iduser).then((res)=>{
+    axios.get("http://localhost:4300/post?id="+this.iduser).then((res)=>{
       this.pathimg = res.data.saryPublication;
       this.profil = res.data;  
     });
-    axios.get("http://10.42.0.1:4300/comments?id="+this.iduser).then((resultComm)=>{
+    axios.get("http://localhost:4300/comments?id="+this.iduser).then((resultComm)=>{
       this.comments = resultComm.data;
       this.nbrComments = resultComm.data.length;
     })

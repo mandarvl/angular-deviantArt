@@ -1,0 +1,62 @@
+*{
+    color: #5E5E5E;
+}
+.container {
+    display: flex;
+    height: 661px;
+}
+.poste {
+    width: 70%;
+    background-color: #22272B;
+    padding-top:40px;
+}
+.cover{
+    width: 70%;
+    margin: 0 auto;
+}
+.poste textarea{
+    resize: none;
+    height: 200px;
+    width: 80%;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: 'Candara';
+    display: block;
+    background-color: #292F34;
+    border: none;
+    color: #999;
+}
+.poste .input{
+    width: 200px;
+    border: none;
+    background-color: #292F34;
+    padding: 10px;
+    margin: 0px 10px 20px 10px;
+}
+.poste .input2{
+    margin-left: 20px;
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #06070D;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.profil{
+    width: 30%;
+    padding-top:40px;
+    background-color: #0F1117;
+}
+.profil .photo{
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.profil img{
+    width: 100%;
+}
+.details p{
+    text-align: center;
+}

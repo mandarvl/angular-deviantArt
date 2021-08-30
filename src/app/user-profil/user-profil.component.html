@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="poste">
+        <div class="cover">
+            <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                    <label for="titre" class="lb">Titre</label>
+                    <input type="text" name="titre" class="input" name="titre" ngModel>
+                    <label for="image" class="lb">Image</label>
+                    <input type="file" class="file-upload" onchange="console.log(event.target.files)" class="input2" name="img" ngModel><br/>
+                    <label for="description" class="lb">Description</label>
+                    <textarea id="" cols="30" rows="10" name="desc" ngModel></textarea>
+                    <button class="btn" type="submit">Publier</button>
+            </form>
+        </div>
+    </div>
+    <div class="profil">
+        <div class="photo">
+        <img src="{{ pers.imgpath }}" alt="photo">
+        </div>
+        <div class="details">
+        <p>{{ pers.name }}</p>
+        </div>
+    </div>
+</div>

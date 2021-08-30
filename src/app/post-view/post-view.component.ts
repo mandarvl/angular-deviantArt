@@ -15,7 +15,7 @@ export class PostViewComponent implements OnInit {
 
   ngOnInit(): void {
     this.posts = this.postservice.posts;
-    axios.get('http://10.42.0.1:4300/posts').then((res)=>{
+    axios.get('http://localhost:4300/posts').then((res)=>{
       this.posts = res.data;
       console.log(res.data);
     });

@@ -17,11 +17,13 @@ import { OptionComponent } from './option/option.component';
 import { ProfilComponent } from './profil/profil.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { SeeMoreComponent } from './see-more/see-more.component';
+import { UserProfilComponent } from './user-profil/user-profil.component';
 
 
 const appRoutes: Routes = [
   { path: 'comment', component: PostCommentComponent },
   { path: 'post/:id', component: PostCommentComponent },
+  { path: 'profil', component: UserProfilComponent },
   { path: '', component:  PostViewComponent}
 ];
 
@@ -37,7 +39,8 @@ const appRoutes: Routes = [
     OptionComponent,
     ProfilComponent,
     PostDetailComponent,
-    SeeMoreComponent
+    SeeMoreComponent,
+    UserProfilComponent
   ],
   imports: [
     BrowserModule,
