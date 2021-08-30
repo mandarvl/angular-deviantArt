@@ -28,6 +28,7 @@ const appRoutes: Routes = [
 ];
 
 
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ const appRoutes: Routes = [
     ProfilComponent,
     PostDetailComponent,
     SeeMoreComponent,
-    UserProfilComponent
+    UserProfilComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
