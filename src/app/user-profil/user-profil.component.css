@@ -26,6 +26,13 @@
     border: none;
     color: #999;
 }
+
+.poste form>*{
+    display: block;
+    margin-bottom: 15px ;
+    margin-left: 0;
+}
+
 .poste .input{
     width: 200px;
     border: none;

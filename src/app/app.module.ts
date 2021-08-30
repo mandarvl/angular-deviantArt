@@ -18,17 +18,16 @@ import { ProfilComponent } from './profil/profil.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { SeeMoreComponent } from './see-more/see-more.component';
 import { UserProfilComponent } from './user-profil/user-profil.component';
-
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
   { path: 'comment', component: PostCommentComponent },
   { path: 'post/:id', component: PostCommentComponent },
   { path: 'profil', component: UserProfilComponent },
+  { path: 'login', component: LoginComponent },
   { path: '', component:  PostViewComponent}
 ];
 
-
-import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [

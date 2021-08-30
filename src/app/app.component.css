@@ -185,8 +185,11 @@ img {
     left: 0;
     right: 0;
     background-color: #06070DC7;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footer p{
-    color: #525252;
-    text-align: center;
+    color: #d1d1d1;
 }
