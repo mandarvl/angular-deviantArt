@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { postService } from '../Services/Post-service';
+import { postService } from '../Services/post-service';
 import { ActivatedRoute } from '@angular/router';
 import { commentService } from '../Services/comment-service';
 import axios from 'axios';

@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { SinglePostComponent } from './single-post/single-post.component';
 import { PostViewComponent } from './post-view/post-view.component';
 
-import {postService} from './Services/Post-service'
+import {postService} from './Services/post-service'
 import {usersService} from './Services/users-service'
 import { Routes, RouterModule } from '@angular/router';
 import { PostCommentComponent } from './post-comment/post-comment.component';
@@ -19,6 +19,7 @@ import { PostDetailComponent } from './post-detail/post-detail.component';
 import { SeeMoreComponent } from './see-more/see-more.component';
 import { UserProfilComponent } from './user-profil/user-profil.component';
 import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: 'comment', component: PostCommentComponent },
@@ -48,7 +49,8 @@ const appRoutes: Routes = [
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     postService,
